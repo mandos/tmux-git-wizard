@@ -1,0 +1,6 @@
+# Development environment
+.direnv
+.worktree
+
+# Build files
+result
