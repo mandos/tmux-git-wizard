@@ -18,8 +18,8 @@ if [ -n "$branch" ]; then
       dir=$(echo "$worktree" | awk '{print $1}')
       tmux new-window -n "$tmux_windows" -c "$dir"
     else
-      git worktree add "./.worktree/$branch" "$branch"
-      tmux new-window -n "$tmux_windows" -c "./.worktree/$branch"
+      git worktree add "./.worktrees/$branch" "$branch"
+      tmux new-window -n "$tmux_windows" -c "./.worktrees/$branch"
     fi
   fi
 
